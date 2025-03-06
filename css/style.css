@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: #0b0b0b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 900px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #282828;
+}
+
+.main-nav .logo {
+    height: 35px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.menu-items a:hover {
+    background: #03a617;
+    border-radius: 5px;
+}
+
+.menu-items a.active {
+    background-color: #00c217;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-slide-img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.main-layout-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr 150px;
+    gap: 10px;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(23, 23, 23) 0%, rgb(17, 17, 17) 10%, rgb(14, 14, 14) 100%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: #fff;
+    line-height: 1.6;
+    border: 1px solid #1e1e1e;
+}
+
+.grid-thumbnail {
+    display: grid;
+    width: 250px;
+    opacity: 90%;
+    border-right: 3px solid #282828;
+}
+
+.main-layout-description {
+    font-size: 14px;
+    align-self: start;
+    padding: 10px;
+}
+
+.main-layout-description h2 {
+    color: #50df00;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.h2-link-green {
+    color: #34c400;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.main-layout-readmore {
+    text-align: center;
+}
+
+.main-layout-readmore .button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #03a617;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-layout-readmore .button:hover {
+    background: #0ad122;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #03a617;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0ad122;
+    border-radius: 5px;
+}
+
+.titlebar {
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-top: 1px solid #282828;
+    border-bottom: 3px solid #28c906c9;
+}
+
+.footer {
+    background: linear-gradient(180deg, rgb(19, 19, 19) 0%, rgb(12, 12, 12) 10%, rgb(24, 24, 24) 100%);;
+    font-size: 14px;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.article-main {
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.article-main h2 {
+    color: #f7f7f7;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article-main h3 {
+    color: #50df00;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.article-main .article-info {
+    color: #555;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.p-info {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+
+.contact-us-main {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.contact-button {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 15px;
+    border: none;
+    background-color: #03a617;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.slide-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content .splide-heart {
+    width: 30px;
+}
+
+.splide-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80%;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+
+    .menu-items a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        transition: background 0.3s;
+        font-size: 12px;
+    }
+
+    .main-nav .logo {
+        height: 25px;
+    }
+      
+    .main-slide-img {
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .main-layout-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        margin: 20px;
+    }
+    .grid-thumbnail {
+        margin: 0 auto;
+        width: 100%;
+        border: 0px;
+    }
+    .main-layout-description {
+        text-align: left;
+        padding: 15px;
+    }
+    .main-layout-readmore {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-layout-readmore .button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #00c217;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .main-layout-readmore .button:hover {
+        background: #0ad122;
+        border-radius: 5px;
+    }
+
+    .titlebar {
+        background-color: #0e0e0e;
+        color: #f1f1f1;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid #28c906c9;
+    }
+
+    .splide-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 15px 20px;
+        font-size: 12px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 80%;
+        word-wrap: break-word;
+    }
+
+    .slide-content .splide-heart {
+        width: 25px;
+    }
+}

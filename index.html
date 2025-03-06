@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Nyex - Webbutveckling med Hjärta</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="main-nav">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Nyex Logo"></a>
+        <div class="menu-items">
+          <a href="index.html" class="active">Hem</a>
+          <a href="pages/artiklar.html">Artiklar</a>
+          <a href="pages/kontakt.html">Kontakta oss</a>
+        </div>
+    </nav>
+    <main>
+        <section class="splide" aria-label="Webbutveckling med hjarta">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                       <div class="slide-content">
+                        <img class="main-slide-img" src="img/splidebg.jpg" alt="1">
+                        <div class="splide-overlay"><h2>Webbutveckling med <img class="splide-heart" src="img/heart.png" alt="Hjarta"></img></h2><p>Vi bygger stilrena, responsiva och användarvänliga webbplatser som fångar både ögat och hjärtat. Oavsett om du behöver en enkel hemsida eller en mer avancerad lösning, ser vi till att den blir precis rätt för dig.</p></div>
+                       </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="slide-content">
+                        <img class="main-slide-img" src="img/splidebg.jpg" alt="1">
+                        <div class="splide-overlay"><h2>Teman & Artiklar</h2><p>Kika gärna på våra nedladdningsbara teman eller läs våra artiklar. Tveka inte att kontakta oss om du undrar över något!</p></div>
+                        </div>
+                      </li>
+                  </ul>
+            </div>
+          </section>
+          <section class="titlebar">Teman</section>
+          <section class="main-layout-grid">
+            <div class="main-layout-thumbnail">
+                <img class="grid-thumbnail" src="img/teman/greenblack.png"></img>
+            </div>
+            <div class="main-layout-description">
+                <h2><a href="downloads/nyex-greenblack.rar" class="h2-link-green">NYEX - Green & Black</a></h2>
+                <p>Ladda ner temat vi använder här på Nyex.</p>
+                <p>Tema: Grönt & Svart</p>
+                <p>Inkluderar: HTML/CSS filer samt exempelbilder</p>
+            </div>
+            <div class="main-layout-readmore">
+                <a href="downloads/nyex-greenblack.rar" class="button">Ladda ner</a>
+            </div>
+        </section>
+        <section class="main-layout-grid">
+            <div class="main-layout-thumbnail">
+                <img class="grid-thumbnail" src="img/teman/redblack.png"></img>
+            </div>
+            <div class="main-layout-description">
+                <h2><a href="downloads/nyex-redblack.rar" class="h2-link-green">NYEX - Red & Black</a></h2>
+                <p>Ladda ner temat vi använder här på Nyex fast i andra färger</p>
+                <p>Tema: Rött och Svart</p>
+                <p>Inkluderar: HTML/CSS filer samt exempelbilder</p>
+            </div>
+            <div class="main-layout-readmore">
+                <a href="downloads/nyex-redblack.rar" class="button">Ladda ner</a>
+            </div>
+        </section>
+        <section class="titlebar">Artiklar</section>
+        <section class="main-layout-grid">
+            <div class="main-layout-thumbnail">
+                <img class="grid-thumbnail" src="img/3.jpg"></img>
+            </div>
+            <div class="main-layout-description">
+                <h2><a href="pages/artiklar/surfa-sakert.html" class="h2-link-green">Så håller du dig säker på internet</a></h2>
+                <p>En artikel om hur du surfar säkert och några tips på vägen.</p>
+            </div>
+            <div class="main-layout-readmore">
+                <a href="pages/artiklar/surfa-sakert.html" class="button">Läs mer</a>
+            </div>
+        </section>
+        <section class="main-layout-grid">
+            <div class="main-layout-thumbnail">
+                <img class="grid-thumbnail" src="img/1.jpg"></img>
+            </div>
+            <div class="main-layout-description">
+                <h2><a href="pages/artiklar/bygg-din-hemsida.html" class="h2-link-green">Så här kommer du igång med din hemsida</a></h2>
+                <p>Några tips om hur du kommer igång med en hemsida</p>
+            </div>
+            <div class="main-layout-readmore">
+                <a href="pages/artiklar/bygg-din-hemsida.html" class="button">Läs mer</a>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">2025 @ NYEX.SE | <a href="mailto:kontakt@nyex.se" class="footer-contactus">Kontakta oss</a></footer>
+          <script>
+            new Splide( '.splide', {
+                speed: 800,
+                type: "loop"
+            }).mount();
+          </script>
+          </div>
+</body>
+</html>
